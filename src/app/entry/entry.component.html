@@ -1,0 +1,9 @@
+<div>
+  <h2>DAILY DIARY</h2>
+   <ul>
+      <li *ngFor='let entry of entrys'>
+        {{entry.name}}
+        <app-entry-details [entry]='entry'></app-entry-details>
+      </li>
+  </ul>
+</div>
